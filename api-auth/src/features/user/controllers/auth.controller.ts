@@ -4,7 +4,11 @@ import HTTP_STATUS from '~/globals/constants/http.constant';
 
 class AuthController {
   public async signUp(req: Request, res: Response) {
-    await authService.signUp('abc');
+    const data = await authService.signUp(req.body);
+    return res.json({
+      message: 'User created successfully',
+      data
+    });
   }
 
   public async signIn(req: Request, res: Response) {}
