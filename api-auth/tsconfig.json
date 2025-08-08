@@ -5,6 +5,7 @@
     "target": "ES2022",
     "outDir": "dist",
     "esModuleInterop": true,
+    "rootDir": "src",
     "strict": true,
     "skipLibCheck": true,
     "baseUrl": ".",

@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { authService } from '../services/auth.service';
 import HTTP_STATUS from '~/globals/constants/http.constant';
+import { log } from 'console';
 
 class AuthController {
   public async signUp(req: Request, res: Response) {
